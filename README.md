@@ -1,8 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Form Builder
+
+A modern, interactive form builder application built with Next.js and React. This application allows users to create and manage multi-page forms with an intuitive drag-and-drop interface.
+
+## Features
+
+- **Multi-page Form Management**
+  - Create, rename, and delete form pages
+  - Drag and drop pages to reorder them
+  - Automatic navigation when adding/removing pages
+  - Set any page as the first page
+
+- **Page Operations**
+  - Add new pages with custom names
+  - Rename existing pages
+  - Copy/duplicate pages
+  - Delete pages with automatic navigation to previous page
+  - Context menu for quick page operations
+
+- **Modern UI/UX**
+  - Clean and intuitive interface
+  - Drag and drop functionality
+  - Responsive design
+  - Keyboard navigation support
+  - Visual feedback for interactions
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +44,58 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Managing Pages
 
-## Learn More
+1. **Adding a Page**
+   - Click the "+" button between pages or the "Add page" button at the end
+   - Enter a name for the new page
+   - The new page will be automatically selected
 
-To learn more about Next.js, take a look at the following resources:
+2. **Removing a Page**
+   - Right-click on a page or click the menu button (three dots)
+   - Select "Delete" from the context menu
+   - You'll be automatically navigated to the previous page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Reordering Pages**
+   - Drag and drop pages to reorder them
+   - The order will be maintained automatically
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Page Operations**
+   - Right-click on a page or click the menu button to access:
+     - Set as first page
+     - Rename
+     - Copy
+     - Duplicate
+     - Delete
 
-## Deploy on Vercel
+### Keyboard Navigation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Use arrow keys to navigate between pages
+- Press Home to go to the first page
+- Press End to go to the last page
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Technologies Used
+
+- Next.js 14
+- React 18
+- TypeScript
+- Tailwind CSS
+- React DnD (Drag and Drop)
+
+## Development
+
+This project uses:
+- TypeScript for type safety
+- Tailwind CSS for styling
+- ESLint for code linting
+- Next.js for the framework
+
+## License
+
+This project is open source and available under the MIT License.

@@ -11,6 +11,18 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        slate: {
+          50: '#FFFFFF',
+          100: '#F5F5F5',
+          200: '#E1E1E1',
+          300: '#9DA4B2',
+          400: '#677289',
+          500: '#1A1A1A',
+        },
+        'slate-alpha': {
+          15: '#9DA4B226',
+          35: '#9DA4B259',
+        }
       },
     },
   },
